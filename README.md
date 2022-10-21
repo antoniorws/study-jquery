@@ -1,18 +1,15 @@
 # Study-JQuery
 
-1. Base para tudo no JQuery:
+# 1. Base para tudo no JQuery:
 $(seletor).açao();
 
 
-
-2. Boas práticas, verificar se o documento está pronto
+## 2. Boas práticas, verificar se o documento está pronto
 $(document).ready(function(){
 });
 
 
-
-
-3. Esconder botão
+## 3. Esconder botão
 $(document).ready(function  () {
     $('button3').click(function(){
         $('h1').hid();
@@ -20,8 +17,7 @@ $(document).ready(function  () {
 });
 
 
-
-4. Simplificando
+## 4. Simplificando
 $((function(){
     $('button3').click(function(){
         $('h1').hid();
@@ -29,9 +25,7 @@ $((function(){
 });
 
 
-
-
-5. Alterando CSS
+## 5. Alterando CSS
     1. propriedade do CSS
     2. valor que vai recever a mudança 
 
@@ -44,7 +38,8 @@ $((function(){
     });
 }); 
 
-6. Fade in e Fade out
+
+## 6. Fade in e Fade out
 $((function(){
     $('button3').click(function(){
         $('h1').css("color", "red");
@@ -57,7 +52,8 @@ $((function(){
     });
 }); 
 
-7. Encadeamento em bloco
+
+## 7. Encadeamento em bloco
 $((function(){
     $('button3').click(function(){
         $('h1').css("color", "red").('h1').fadeOut().('h1').delay(3000).('h1').fadeIn();
@@ -65,7 +61,7 @@ $((function(){
 }); 
 
 
-8. CSS em uma única linha (padrão camel case)
+## 8. CSS em uma única linha (padrão camel case)
 $((function(){
     $('button3').click(function(){
         $('h1').css({
@@ -81,8 +77,7 @@ $("#teste1").css({
             });
 
 
-
-9. Adicionando e removendo classes
+## 9. Adicionando e removendo classes
 $(function(){
     $('#button1').click(function(){
         $('#teste1').removeClass('red').addClass('green');
@@ -96,9 +91,7 @@ $(function(){
 })
 
 
-
-
-10. Scroll com click de botão
+## 10. Scroll com click de botão
 
  $(function(){
     $('#button1').click(
