@@ -51,14 +51,10 @@ $((function(){
 ## 6. Fade in e Fade out
 ```
 $((function(){
-    $('button3').click(function(){
-        $('h1').css("color", "red");
-        $('h1').fadeOut();
-        $('h1').delay(3000);
-        $('h1').fadeIn();
-    });
-    $('button1').click(function(){
-        $('h2').css("color", "blue");
+    $('#btnHome').click(function(){
+        $('#divHome h1').fadeOut();
+        $('#divHome h1').delay(3000);
+        $('#divHome h1').fadeIn();
     });
 }); 
 ```
@@ -66,8 +62,10 @@ $((function(){
 ## 7. Encadeamento em bloco
 ```
 $((function(){
-    $('button3').click(function(){
-        $('h1').css("color", "red").('h1').fadeOut().('h1').delay(3000).('h1').fadeIn();
+    $('#btnHome').click(function(){
+        $('#divHome h1').fadeOut()
+        .delay(3000)
+        .fadeIn();
     });
 }); 
 ```
