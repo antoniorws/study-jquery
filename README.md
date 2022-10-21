@@ -19,17 +19,27 @@ $(document).ready(function  () {
 ```
 
 ## 4. Simplificando
+
 ```
-$((function(){
-    $('button3').click(function(){
-        $('h1').hid();
+$(function(){
+    $('#btnHome').click(function(){
+        $('#divHome').hide();
     });
-});
+    $('#btnInfo').click(function(){
+        $('#divInfo').hide();
+    });
+    $('#btnContato').click(function(){
+        $('#divContato').hide();
+    });
+    $('#btnShow').click(function(){
+        $('div').show();
+    });
+})
 ```
 
 ## 5. Alterando CSS
 ### Propriedade do CSS
-### valor que vai recever a mudança 
+### Valor que vai recever a mudança 
 ```
 $((function(){
     $('button3').click(function(){
