@@ -12,8 +12,11 @@ $(document).ready(function(){
 ## 3. Esconder botão
 ```
 $(document).ready(function  () {
-    $('button3').click(function(){
-        $('h1').hid();
+    $('#btnHome').click(function(){
+        $('#divHome').hide();
+    });
+    $('#btnShow').click(function(){
+        $('div').show();
     });
 });
 ```
@@ -25,12 +28,6 @@ $(function(){
     $('#btnHome').click(function(){
         $('#divHome').hide();
     });
-    $('#btnInfo').click(function(){
-        $('#divInfo').hide();
-    });
-    $('#btnContato').click(function(){
-        $('#divContato').hide();
-    });
     $('#btnShow').click(function(){
         $('div').show();
     });
@@ -39,7 +36,7 @@ $(function(){
 
 ## 5. Alterando CSS
 ### Propriedade do CSS
-### Valor que vai recever a mudança 
+### Valor que vai receber a mudança 
 ```
 $((function(){
     $('button3').click(function(){
