@@ -10,14 +10,16 @@ $(document).ready(function(){
 
 
 ## 3. Esconder botão
+```
 $(document).ready(function  () {
     $('button3').click(function(){
         $('h1').hid();
     });
 });
-
+```
 
 ## 4. Simplificando
+```
 $((function(){
     $('button3').click(function(){
         $('h1').hid();
@@ -37,7 +39,7 @@ $((function(){
         $('h2').css("color", "blue");
     });
 }); 
-
+```
 
 ## 6. Fade in e Fade out
 $((function(){
