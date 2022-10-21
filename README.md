@@ -73,73 +73,73 @@ $((function(){
 ## 8. CSS em uma única linha (padrão camel case)
 ```
 $((function(){
-    $('button3').click(function(){
-        $('h1').css({
-            color, "red"
+    $('#btnHome').click(function(){
+        $('#divHome h1')
+        .css({
+            color: "red",
+            fontSize: "100px"
             }
-        ).('h1').fadeOut().('h1').delay(3000).('h1').fadeIn();
+        );
     });
 }); 
-
-$("#teste1").css({
-                color: 'red',
-                fontSize: '10px'
-            });
 ```
 
 ## 9. Adicionando e removendo classes
 ```
 $(function(){
-    $('#button1').click(function(){
-        $('#teste1').removeClass('red').addClass('green');
-    })
-    $('#button2').click(function(){
-        $('#teste1').removeClass('green').addClass('red');
-    })
-    $('#button3').click(function(){
-        $('#teste1').removeClass('red');
-    })
+    $('#btnGreen').click(function(){
+        $('#divHome h1').removeClass('red').addClass('green');
+    });
 })
 ```
 
 ## 10. Scroll com click de botão
+
+### Scroll para o topo da página ao fazer refresh
 ```
- $(function(){
-    $('#button1').click(
-        function(){
-            $('html,body').animate(
-                {
-                    scrollTop: $('#teste1').offset().top
-                },
-                'slow'
-            )
-        }
-    );
+$(function(){
+    $('html,body').animate(
+        {
+            scrollTop: $('html,body').offset().top
+        },
+        'slow'
+    )
 })
 ```
+### Scroll ao clicar em um botão
 ```
-$('#button2').click(
-    function(){
+$(function(){
+    $('#btnHome').click(function(){
         $('html,body').animate(
             {
-                scrollTop: $('#teste2').offset().top
+                scrollTop: $('#divHome').offset().top
             },
             'slow'
         )
-    }
-);
+    });
+})
 ```
 ```
 $(function(){
-    $('#button3').click(
-        function(){
-            $('html,body').animate(
-                {
-                    scrollTop: $('#teste3').offset().top
-                },
-                'slow'
-            )
-        }
-    );
+    $('#btnInfo').click(function(){
+        $('html,body').animate(
+            {
+                scrollTop: $('#divInfo').offset().top
+            },
+            'slow'
+        )
+    });
+})
+```
+```
+$(function(){
+    $('#btnContato').click(function(){
+        $('html,body').animate(
+            {
+                scrollTop: $('#divContato').offset().top
+            },
+            'slow'
+        )
+    });
 })
 ```
