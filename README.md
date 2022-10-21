@@ -1,4 +1,4 @@
-# scroll-jquery
+# Study-JQuery
 
 1. Base para tudo no JQuery:
 $(seletor).açao();
