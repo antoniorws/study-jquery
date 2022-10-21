@@ -25,12 +25,12 @@ $((function(){
         $('h1').hid();
     });
 });
-
+```
 
 ## 5. Alterando CSS
-    1. propriedade do CSS
-    2. valor que vai recever a mudança 
-
+### Propriedade do CSS
+### valor que vai recever a mudança 
+```
 $((function(){
     $('button3').click(function(){
         $('h1').css("color", "red");
@@ -42,6 +42,7 @@ $((function(){
 ```
 
 ## 6. Fade in e Fade out
+```
 $((function(){
     $('button3').click(function(){
         $('h1').css("color", "red");
@@ -53,17 +54,19 @@ $((function(){
         $('h2').css("color", "blue");
     });
 }); 
-
+```
 
 ## 7. Encadeamento em bloco
+```
 $((function(){
     $('button3').click(function(){
         $('h1').css("color", "red").('h1').fadeOut().('h1').delay(3000).('h1').fadeIn();
     });
 }); 
-
+```
 
 ## 8. CSS em uma única linha (padrão camel case)
+```
 $((function(){
     $('button3').click(function(){
         $('h1').css({
@@ -77,9 +80,10 @@ $("#teste1").css({
                 color: 'red',
                 fontSize: '10px'
             });
-
+```
 
 ## 9. Adicionando e removendo classes
+```
 $(function(){
     $('#button1').click(function(){
         $('#teste1').removeClass('red').addClass('green');
@@ -91,10 +95,10 @@ $(function(){
         $('#teste1').removeClass('red');
     })
 })
-
+```
 
 ## 10. Scroll com click de botão
-
+```
  $(function(){
     $('#button1').click(
         function(){
@@ -107,7 +111,8 @@ $(function(){
         }
     );
 })
-
+```
+```
 $('#button2').click(
     function(){
         $('html,body').animate(
@@ -118,8 +123,8 @@ $('#button2').click(
         )
     }
 );
-
-
+```
+```
 $(function(){
     $('#button3').click(
         function(){
@@ -132,3 +137,4 @@ $(function(){
         }
     );
 })
+```
